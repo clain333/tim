@@ -1,0 +1,32 @@
+{
+  "text_messages": {
+    "id": "650f9a2e1234567890abcdef",
+    "conversation_id": 1001,
+    "from_user": 2002,
+    "seq": 1,
+    "msg_type": 1,
+    "content": "这是消息内容",
+    "created_at": "2025-09-16T12:00:00Z"
+  },
+  "file_message": {
+    "id": "650f9a2e1234567890abcdef",
+    "conversation_id": 1001,
+    "from_user": 2002,
+    "seq": 1,
+    "msg_type": 2,
+    "file_id": 123456,
+    "file_name": "example.txt",
+    "hash": "abcdef123456",
+    "size": 1024,
+    "created_at": "2025-09-16T12:00:00Z"
+  },
+  "system_message": {
+    "id": "650f9a2e0987654321fedcba",
+    "user_id": 2002,
+    "seq": 1,
+    "msg_type": 3,
+    "action": "用户登录",
+    "created_at": "2025-09-16T12:00:00Z"
+  }
+}
+

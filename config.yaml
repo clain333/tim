@@ -1,0 +1,59 @@
+server:
+  port: 1234
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: 123456
+  dbname: tim
+  charset: utf8mb4
+  parseTime: true
+  loc: Asia/Shanghai
+mongodb:
+  host: "127.0.0.1"
+  port: 27017
+  username: "root"
+  password: "123456"
+  database: "message"
+  timeout: 10
+redis:
+  addr: 127.0.0.1:6379
+  password: ""
+  db: 0
+kafka:
+  brokers: "127.0.0.1:29092"
+  topics:
+    mysql: "mysql_topic"
+    msg: "msg_topic"
+    offline: "offline_topic"
+    delete: "delete_topic"
+    conn: "conn_topic"
+  group_id: "tim_consumer_group"
+  enable_auto_commit: true
+  auto_offset_reset: "earliest"
+  user: "aaa"
+  password: "123456"
+
+
+email:
+  host: smtp.qq.com
+  port: 587
+  username: xxxx@qq.com
+  password: xxx
+  from: xxx@qq.com
+
+captcha:
+  template: "您的验证码是%s，10分钟内有效。请勿泄露给他人。"
+  subject: "IM系统验证码"
+  length: 6
+
+
+jwt:
+  Secret: sS72nss2as
+avatar:
+  src: ./static/avatar
+  maxSize: 2000
+
+upload:
+  maxsize: 104857600
